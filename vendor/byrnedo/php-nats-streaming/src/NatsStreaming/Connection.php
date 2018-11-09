@@ -451,8 +451,8 @@ class Connection
      */
     public function __destruct()
     {
-//        if ($this->isConnected()) {
-//            $this->close();
-//        }
+        if ($this->isConnected()) {
+            $this->close();
+        }
     }
 }
