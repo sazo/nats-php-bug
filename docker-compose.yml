@@ -9,7 +9,7 @@ services:
             - ./nats.yml:/opt/nats.yml
 
     php:
-      image: php:5.6-cli
+      image: php:7.1-cli
       volumes:
         - .:/app
       entrypoint: php nats.php
