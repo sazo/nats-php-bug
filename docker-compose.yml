@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+
+    nats-streaming:
+        image: nats-streaming:latest
+        command: "--config '/opt/nats.yml'"
+        volumes:
+            - ./nats.yml:/opt/nats.yml
+
+    php:
+      image: php:5.6-cli
+      volumes:
+        - .:/app
+      entrypoint: php nats.php
+      working_dir: /app

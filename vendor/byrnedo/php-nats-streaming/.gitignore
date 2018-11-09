@@ -1,0 +1,9 @@
+/vendor/*
+
+!/vendor/.gitkeep
+/.idea
+/build
+
+/.protocol-mod.proto
+
+/composer.phar

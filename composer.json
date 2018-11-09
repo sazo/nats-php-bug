@@ -1,0 +1,13 @@
+{
+    "name": "sazo/nats-test-php",
+    "description": "Test",
+    "require": {
+        "byrnedo/php-nats-streaming": "^0.2.4"
+    },
+    "authors": [
+        {
+            "name": "Daniel Fly",
+            "email": "dn@smartweb.dk"
+        }
+    ]
+}

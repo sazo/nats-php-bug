@@ -1,0 +1,35 @@
+################################################################################
+# NATS Server Configuration
+#
+# For a complete list of configuration options, see:
+#   https://github.com/nats-io/nats-streaming-server#configuration-file.
+################################################################################
+
+## host/port to listen for client connections
+listen: 0.0.0.0:4222
+#
+## HTTP monitoring port
+http: 0.0.0.0:8222
+
+#
+# NATS Streaming Server configuration
+#
+streaming: {
+        hb_interval: '5s'
+        hb_timeout: '5s'
+        hb_fail_count: 3
+        max_channels: 100
+        max_subs: 1000
+        max_msgs: 1000000
+        max_bytes: 1000000
+        max_age: 'unlimited'
+        max_inactivity: 'unlimited'
+        sd: true
+        sv: true
+        logtime: true
+}
+
+debug:   true
+trace:   true
+logtime: true
+
